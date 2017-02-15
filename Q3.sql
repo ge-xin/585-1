@@ -1,3 +1,4 @@
+--Database: MySQL 5.7.17
 CREATE TABLE `project_tracks` (
   `project_id` varchar(45) NOT NULL,
   `step` varchar(45) NOT NULL,

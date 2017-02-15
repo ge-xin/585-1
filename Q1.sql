@@ -1,3 +1,4 @@
+--Database: MySQL 5.7.17
 CREATE TABLE `hotel_stays` (
   `room_num` int(11) NOT NULL,
   `arr_date` date NOT NULL,
@@ -49,3 +50,12 @@ BEGIN
     END IF;
 END; //
 DELIMITER ;
+
+INSERT INTO hotel_stays(room_num, arr_date, dep_date, guest_name)
+VALUES (123, '2016-02-02', '2016-02-06', 'A');
+
+INSERT INTO hotel_stays(room_num, arr_date, dep_date, guest_name)
+VALUES (123, '2016-02-04', '2016-02-08', 'B');
+
+INSERT INTO hotel_stays(room_num, arr_date, dep_date, guest_name)
+VALUES (201, '2016-02-10', '2016-02-06', 'C');

@@ -1,3 +1,4 @@
+--Database: MySQL 5.7.17
 CREATE TABLE `GradeReport` (
   `SID` varchar(45) DEFAULT NULL,
   `ClassName` varchar(45) DEFAULT NULL,

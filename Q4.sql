@@ -1,3 +1,4 @@
+--Database: MySQL 5.7.17
 CREATE TABLE `mail_list` (
   `name` varchar(45) DEFAULT NULL,
   `address` varchar(256) DEFAULT NULL,
