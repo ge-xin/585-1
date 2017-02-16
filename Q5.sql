@@ -1,4 +1,4 @@
---Database: MySQL 5.7.17
+-- Database: MySQL 5.7.17
 CREATE TABLE `menu` (
   `dish` varchar(45) NOT NULL,
   PRIMARY KEY (`dish`)
