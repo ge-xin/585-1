@@ -8,6 +8,14 @@ CREATE TABLE `mail_list` (
   UNIQUE KEY `id_UNIQUE` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+INSERT INTO `mail_list` (`name`, `address`, `id`) VALUES ('Alice', 'A', '10');
+INSERT INTO `mail_list` (`name`, `address`, `id`) VALUES ('Bob', 'B', '15');
+INSERT INTO `mail_list` (`name`, `address`, `id`) VALUES ('Carmen', 'C', '22');
+INSERT INTO `mail_list` (`name`, `address`, `id`, `same_family`) VALUES ('Diego', 'A', '9', '10');
+INSERT INTO `mail_list` (`name`, `address`, `id`, `same_family`) VALUES ('Ella', 'B', '3', '15');
+INSERT INTO `mail_list` (`name`, `address`, `id`) VALUES ('Farkhad', 'D', '11');
+
+
 SET SQL_SAFE_UPDATES=0;
 delete from mail_list
 where id in(

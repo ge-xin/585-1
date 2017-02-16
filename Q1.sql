@@ -46,7 +46,7 @@ FOR EACH ROW
 BEGIN
 	IF NEW.arr_date < (SELECT MAX(dep_date) FROM hotel_stays WHERE room_num = NEW.room_num) THEN
     SIGNAL SQLSTATE '45000'
-    SET MESSAGE_TEXT = 'Insertion error: The room is not available on given arr_date';
+    SET MESSAGE_TEXT = 'Update error: The room is not available on given arr_date';
     END IF;
 END; //
 DELIMITER ;
